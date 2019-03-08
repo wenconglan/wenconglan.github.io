@@ -5,15 +5,19 @@
   
 
   
-  <title>LoganBlog</title>
+  <title>第四篇博客 | LoganBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LoganBlog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="###1.HTML5文本声明 1&amp;lt;!DOCTYPE html&amp;gt;  //声明文档为HTML5文档   声明文档类型为HTML5文件,文档声明必须放在HTML文档的第一行且必不可少。   ###2.meta标签1.charset属性：单独使用，设置文档字符集及编码方式。1&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;   //文档设置为UTF-8编码方式 常见">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第四篇博客">
+<meta property="og:url" content="http://yoursite.com/2019/03/08/第四篇博客/index.html">
 <meta property="og:site_name" content="LoganBlog">
+<meta property="og:description" content="###1.HTML5文本声明 1&amp;lt;!DOCTYPE html&amp;gt;  //声明文档为HTML5文档   声明文档类型为HTML5文件,文档声明必须放在HTML文档的第一行且必不可少。   ###2.meta标签1.charset属性：单独使用，设置文档字符集及编码方式。1&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;   //文档设置为UTF-8编码方式 常见">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-08T07:51:32.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LoganBlog">
+<meta name="twitter:title" content="第四篇博客">
+<meta name="twitter:description" content="###1.HTML5文本声明 1&amp;lt;!DOCTYPE html&amp;gt;  //声明文档为HTML5文档   声明文档类型为HTML5文件,文档声明必须放在HTML文档的第一行且必不可少。   ###2.meta标签1.charset属性：单独使用，设置文档字符集及编码方式。1&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;   //文档设置为UTF-8编码方式 常见">
   
     <link rel="alternate" href="/atom.xml" title="LoganBlog" type="application/atom+xml">
   
@@ -60,108 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-第三篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/第三篇博客/" class="article-date">
-  <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/第三篇博客/">第三篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##1. HTTP请求</p>
-<p>####请求的结构包含下面四部分：</p>
-<ul>
-<li>动词 路径 协议/版本   <em>//注：这里常用动词有GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等</em> </li>
-<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
-<li>回车    <em>//注这部分只能是回车</em></li>
-<li>要上传的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>请求如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-d9f5453925f18d8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="请求"><br><em>说明：<br>1）请求最多包含四部分，最少包含三部分，第四部分上传的数据可以没有；<br>2）第三部分只能是一个回车（\n）；<br>3）这里的路径包括「查询参数」，但不包括「锚点」；<br>4）如果你没有写路径，那么路径默认为 /；</em><br>##2. HTTP响应<br>####请求的结构最多包含下面四部分：</li>
-<li>协议/版本号 状态码 状态解释   <em>//注：这里常用状态码有2××（成功）、3××（重定向）、4××（客户端错误）、5××（服务器错误）等</em> </li>
-<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
-<li>回车    <em>//注这部分只能是回车</em></li>
-<li>要下载的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>响应如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-8c1b8194464a3ad8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-0260df081b500422.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应下载的数据"></li>
-</ul>
-<p><em>说明：第三部分永远都是一个回车（\n）；</em></p>
-<p>##3. 用Chrome开发者工具查看 HTTP 请求与响应内容<br>1 打开Chrome浏览器，右键，点击检查，进入开发者工具，并点击Network；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-242522b89bf51b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"><br>2 输入访问的网址，如<code>https://www.baidu.com/s?wd=hello</code>，刷新页面，可以看到浏览器发出很多请求；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-ad9416bea1bb78da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f3fc33d81868af23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"><br>3 点击一个请求Name进入，并点击Request Headers目录的view source，就可以看到具体的请求内容,如果有请求的第四部分，那么在 FormData 可以看到；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-e3670a8fca1a8df8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f45b1ef5e4c82792.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="5"><br>4 同理，点击一个Response Headers目录的view source，就可以看到服务器对该请求的响应内容，点击Response栏可以查看响应的第4部分；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-584e8d2ff8b56091.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="6"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-8964196b2637387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="7"></p>
-<p>##4. http命令curl<br>1 curl命令含义：从服务器传输数据或向服务器传输数据，支持大多数协议，包括HTTP，FTP和POP3等。<br>2 curl主要用法：</p>
-<ul>
-<li>-s/–silent：静音模式</li>
-<li>-S/–show-error：显示错误</li>
-<li>-x/–proxy &lt;host[:port]&gt; ：在给定的端口上使用HTTP代理</li>
-<li>-X/–request <command>：指定什么命令</li>
-<li>-v：显示请求详细信息</li>
-<li>-V/–version：显示版本信息</li>
-<li>-H/–header <line>：自定义头信息传递给服务器</line></li>
-<li>-d/–data <data>：HTTP POST方式传送数据<br>更多用法详见<a href="https://www.cnblogs.com/duhuo/p/5695256.html" target="_blank" rel="noopener">Linux curl命令详解</a></data></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/第三篇博客/" data-id="cjszrhyyl000388v41bye0r4g" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第五篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/第五篇博客/" class="article-date">
-  <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/第五篇博客/">第五篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/第五篇博客/" data-id="cjszrhyyn000488v4ws22kvd0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/123456/">123456</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第四篇博客" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-第四篇博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/08/第四篇博客/" class="article-date">
   <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">2019-03-08</time>
@@ -174,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/第四篇博客/">第四篇博客</a>
+    <h1 class="article-title" itemprop="name">
+      第四篇博客
     </h1>
   
 
@@ -320,144 +223,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-开博大吉" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/开博大吉/" class="article-date">
-  <time datetime="2019-03-08T07:38:27.515Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2019/03/08/第五篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/开博大吉/">开博大吉，第一个博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我是Logan,我是好人</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/开博大吉/" data-id="cjszrhyyb000188v4lobcy4zx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/hello-world/" class="article-date">
-  <time datetime="2019-03-08T07:35:17.981Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          第五篇博客
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2019/03/08/开博大吉/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">开博大吉，第一个博客</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/hello-world/" data-id="cjszrhyy2000088v44i3vk3zx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-第二篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/02/第二篇博客/" class="article-date">
-  <time datetime="2019-03-02T04:50:00.000Z" itemprop="datePublished">2019-03-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/02/第二篇博客/">第二篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##1.ls<br><strong>1.</strong>命令含义：List directory contents，用来显示目录或具体文件列表。<br><strong>2.</strong>主要用法示例：</p>
-<ul>
-<li>#####ls -1：每行列出一个文件，即以单列形式列出。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-50c169842c9d102d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -1"></li>
-<li>#####ls -a：列出所有文件，包括隐藏文件。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-72ea8b0413561cef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -a"></li>
-<li>#####ls -la：所有文件的长格式列表（含权限、所有权、大小和修改日期）。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-b6ce0960aad21392.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -la"></li>
-<li>#####ls -lh：使用人可读单位（KB，MB，GB）显示大小的长格式列表。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-3bb84db6268d21a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -lh"></li>
-<li>#####ls -lS：按大小排序的长格式列表（降序）。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-5205e16be253a0da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -lS"></li>
-<li>#####ls -ltr：按大小排序的长格式列表（降序）。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-509f7bbb0e4a5ae5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -ltr"><br>##2.cat<br><strong>1.</strong>命令含义：Print and concatenate files，打印、合并文件。<br><strong>2.</strong>主要用法示例：</li>
-<li>#####cat file：将文件内容打印显示。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-2d25ef4785108cca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cat file"></li>
-<li>#####cat file1 file2&gt; target_file：将多个文件合并到目标文件中。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-b4d27ab7600d4541.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cat file1 file2&gt; target_file"></li>
-<li><h5 id="cat-file1-file2-gt-gt-target-file：将几个文件附加到目标文件中。"><a href="#cat-file1-file2-gt-gt-target-file：将几个文件附加到目标文件中。" class="headerlink" title="cat file1 file2 &gt;&gt; target_file：将几个文件附加到目标文件中。"></a>cat file1 file2 &gt;&gt; target_file：将几个文件附加到目标文件中。</h5><img src="https://upload-images.jianshu.io/upload_images/2124235-adf54fe154dfcb6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"><br>##3.mv<br><strong>1.</strong>命令含义：Move or rename files and directories，移动或重命名文件和目录。<br><strong>2.</strong>主要用法示例：</li>
-<li>#####mv file1.txt file2.txt：将file1文本重命名为file2。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-e7b6d29e97b29bac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="重命名"></li>
-<li>#####mv file1.txt file2：讲file1文本移动到file2目录。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-673cdb3c2f288f9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="移动"><br>##4.touch<br><strong>1.</strong>命令含义：用于修改文件或者目录的时间属性，包括存取时间和更改时间。若文件不存在，系统会建立一个新的空白文件。<br><strong>2.</strong>主要用法示例：</li>
-<li>#####touch file：修改file的时间属性，如果file不存在，则将创建一个新的空白文件。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-b9ca11a05159bb0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="touch.png"><br>##4.命令行查询网站<a href="https://explainshell.com/explain?cmd=ls+-lrt" target="_blank" rel="noopener">explainshell.com</a>使用说明<br>该网站几乎能够查询所有Linux命令的含义，其界面如下图：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-375b88e142e77db8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="命令行释义查询"></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/02/第二篇博客/" data-id="cjszrhyye000288v4nyk2ijkk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
