@@ -1,236 +1,425 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="LoganBlog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="LoganBlog">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LoganBlog">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+
+
   <title>LoganBlog</title>
-  <meta name="author" content="wenconglan">
   
-  
-  
-  <meta property="og:site_name" content="LoganBlog">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
-    <meta property="og:image" content>
-  
-   <link rel="apple-touch-icon" href="/icon.png">
-   <link rel="shortcut icon" href="/favicon.png">
-   <link rel="alternate" href="http://xxx.xx/atom.xml" title="LoganBlog" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+
+
+
+
+
+
 </head>
-</html>
 
-<body>
-  <div id="content" class="inner">
-    <aside id="sidebar" class="alignleft">
-      <div class="navigationBar">
-        <a href="/">LoganBlog</a>
-      </div>
-    	
-  <nav class="widget" id="menu">
-	<ul>
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
     
-      <li class="cell"><a class="next" href="/">Home</a></li><li>
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
     
-      </li><li class="cell"><a class="next" href="/archives/">Archives</a></li><li>
-    
-      </li><li class="cell"><a class="next" href="/about/">About</a></li><li>
-    
-      </li><li class="cell"><a class="next" href="/atom.xml">Subscribe</a></li><li>
-    
-    </li></ul>
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LoganBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
 </nav>
 
-  <div class="widget weibo">
-<iframe width="100%" height="100" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=110&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=0&isWeibo=0&isFans=0&uid=&verifier=78e1ee4d&colors=ffffff,ffffff,999,000,ecfbfd&dpc=1"></iframe>
-</div>
-
-  
-
-  
-<div class="widget tagcloud">
-  <h3 class="title">标签云</h3>
-  <div class="entry">
-    <a href="/tags/123456/" style="font-size: 10px;">123456</a>
-  </div>
-</div>
 
 
-    	<footer id="footer" class="inner"><div class="copyright">
-  
-  &copy; 2019 wenconglan
-  
-</div>
+ </div>
+    </header>
 
-
-
-</footer>
-    </aside>
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
     
-    
-    <div id="hidden-navigationBar" class="navigationBar">
-      <a href="/">LoganBlog</a>
-    </div>
-    <div id="main-col" class="alignright">
-    <div id="wrapper">
       
-  
-<article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src>
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-  <header>
-      
-      
-  
-    <h1 class="title"><a href="/2019/03/08/第三篇博客/">第三篇博客</a></h1>
+
   
 
-      <time datetime="2019-03-08T07:50:09.000Z"><a href="/2019/03/08/第三篇博客/">2019-03-08</a></time>
-      
-  </header>
-    <div class="entry">
-      
-        <p>##1. HTTP请求</p>
-<p>####请求的结构包含下面四部分：</p>
-<ul>
-<li>动词 路径 协议/版本   <em>//注：这里常用动词有GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等</em> </li>
-<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
-<li>回车    <em>//注这部分只能是回车</em></li>
-<li>要上传的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>请求如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-d9f5453925f18d8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="请求"><br><em>说明：<br>1）请求最多包含四部分，最少包含三部分，第四部分上传的数据可以没有；<br>2）第三部分只能是一个回车（\n）；<br>3）这里的路径包括「查询参数」，但不包括「锚点」；<br>4）如果你没有写路径，那么路径默认为 /；</em><br>##2. HTTP响应<br>####请求的结构最多包含下面四部分：</li>
-<li>协议/版本号 状态码 状态解释   <em>//注：这里常用状态码有2××（成功）、3××（重定向）、4××（客户端错误）、5××（服务器错误）等</em> </li>
-<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
-<li>回车    <em>//注这部分只能是回车</em></li>
-<li>要下载的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>响应如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-8c1b8194464a3ad8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-0260df081b500422.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应下载的数据"></li>
-</ul>
-<p><em>说明：第三部分永远都是一个回车（\n）；</em></p>
-<p>##3. 用Chrome开发者工具查看 HTTP 请求与响应内容<br>1 打开Chrome浏览器，右键，点击检查，进入开发者工具，并点击Network；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-242522b89bf51b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"><br>2 输入访问的网址，如<code>https://www.baidu.com/s?wd=hello</code>，刷新页面，可以看到浏览器发出很多请求；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-ad9416bea1bb78da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f3fc33d81868af23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"><br>3 点击一个请求Name进入，并点击Request Headers目录的view source，就可以看到具体的请求内容,如果有请求的第四部分，那么在 FormData 可以看到；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-e3670a8fca1a8df8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f45b1ef5e4c82792.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="5"><br>4 同理，点击一个Response Headers目录的view source，就可以看到服务器对该请求的响应内容，点击Response栏可以查看响应的第4部分；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-584e8d2ff8b56091.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="6"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-8964196b2637387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="7"></p>
-<p>##4. http命令curl<br>1 curl命令含义：从服务器传输数据或向服务器传输数据，支持大多数协议，包括HTTP，FTP和POP3等。<br>2 curl主要用法：</p>
-<ul>
-<li>-s/–silent：静音模式</li>
-<li>-S/–show-error：显示错误</li>
-<li>-x/–proxy &lt;host[:port]&gt; ：在给定的端口上使用HTTP代理</li>
-<li>-X/–request <command>：指定什么命令</li>
-<li>-v：显示请求详细信息</li>
-<li>-V/–version：显示版本信息</li>
-<li>-H/–header <line>：自定义头信息传递给服务器</line></li>
-<li>-d/–data <data>：HTTP POST方式传送数据<br>更多用法详见<a href="https://www.cnblogs.com/duhuo/p/5695256.html" target="_blank" rel="noopener">Linux curl命令详解</a></data></li>
-</ul>
+  
+  
+  
 
-	 
-	     <p style="margin:20px 0; color:#9f9f9f; font-size:12px;">
-<span>Posted by <a style="color:#9f9f9f;" href><strong></strong></a> - 2019-03-08</span><br>
-<span style="line-height:13px;">如需转载，请注明： 本文来自 <a style="color:#9f9f9f;" href="http://yoursite.com"><strong>LoganBlog</strong></a></span>
-</p>
-       	 
-      
-    </div>
-    <footer>
-      
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/第五篇博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wenconglan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LoganBlog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/10/第五篇博客/" itemprop="url">第五篇博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-10T15:50:09+08:00">
+                2019-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-      <div class="clearfix"></div>
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
   </div>
-</article>
-
-
-
-
   
-<article class="post">
   
-    <div class="gallery">
-  <div class="photoset">
+  
+  </article>
+
+
     
-      <img src>
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-  <header>
       
-      
-  
-    <h1 class="title"><a href="/2019/03/08/第五篇博客/">第五篇博客</a></h1>
+
   
 
-      <time datetime="2019-03-08T07:50:09.000Z"><a href="/2019/03/08/第五篇博客/">2019-03-08</a></time>
-      
-  </header>
-    <div class="entry">
-      
-        
-	 
-	     <p style="margin:20px 0; color:#9f9f9f; font-size:12px;">
-<span>Posted by <a style="color:#9f9f9f;" href><strong></strong></a> - 2019-03-08</span><br>
-<span style="line-height:13px;">如需转载，请注明： 本文来自 <a style="color:#9f9f9f;" href="http://yoursite.com"><strong>LoganBlog</strong></a></span>
-</p>
-       	 
-      
-    </div>
-    <footer>
-      
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/08/第四篇博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wenconglan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LoganBlog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/08/第四篇博客/" itemprop="url">第四篇博客</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-08T15:50:09+08:00">
+                2019-03-08
+              </time>
+            
 
+            
 
+            
+          </span>
 
-  
-<article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
-      <img src>
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-  <header>
-      
-      
-  
-    <h1 class="title"><a href="/2019/03/08/第四篇博客/">第四篇博客</a></h1>
-  
 
-      <time datetime="2019-03-08T07:50:09.000Z"><a href="/2019/03/08/第四篇博客/">2019-03-08</a></time>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-  </header>
-    <div class="entry">
       
-        <p>###1.HTML5文本声明</p>
+
+      
+        
+          
+            <p>###1.HTML5文本声明</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;  //声明文档为HTML5文档</span><br></pre></td></tr></table></figure>
 <blockquote>
 <ol>
@@ -358,166 +547,269 @@
 </code></pre></blockquote>
 <p><em>　　　　　　　　声明：本博客版权归兰文聪和饥人谷所有，转载需说明来源！</em></p>
 
-	 
-	     <p style="margin:20px 0; color:#9f9f9f; font-size:12px;">
-<span>Posted by <a style="color:#9f9f9f;" href><strong></strong></a> - 2019-03-08</span><br>
-<span style="line-height:13px;">如需转载，请注明： 本文来自 <a style="color:#9f9f9f;" href="http://yoursite.com"><strong>LoganBlog</strong></a></span>
-</p>
-       	 
+          
+        
       
     </div>
-    <footer>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
       
-        
-        
+
       
-      <div class="clearfix"></div>
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
   </div>
-</article>
-
-
-
-
   
-<article class="post">
   
-    <div class="gallery">
-  <div class="photoset">
+  
+  </article>
+
+
     
-      <img src>
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/05/第三篇博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wenconglan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LoganBlog">
+    </span>
+
     
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-  <header>
-      
-      
-  
-    <h1 class="title"><a href="/2019/03/08/开博大吉/">开博大吉，第一个博客</a></h1>
-  
+      <header class="post-header">
 
-      <time datetime="2019-03-08T07:38:27.515Z"><a href="/2019/03/08/开博大吉/">2019-03-08</a></time>
-      
-  </header>
-    <div class="entry">
-      
-        <p>我是Logan,我是好人</p>
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/05/第三篇博客/" itemprop="url">第三篇博客</a></h1>
+        
 
-	 
-	     <p style="margin:20px 0; color:#9f9f9f; font-size:12px;">
-<span>Posted by <a style="color:#9f9f9f;" href><strong></strong></a> - 2019-03-08</span><br>
-<span style="line-height:13px;">如需转载，请注明： 本文来自 <a style="color:#9f9f9f;" href="http://yoursite.com"><strong>LoganBlog</strong></a></span>
-</p>
-       	 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-05T15:50:09+08:00">
+                2019-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>##1. HTTP请求</p>
+<p>####请求的结构包含下面四部分：</p>
+<ul>
+<li>动词 路径 协议/版本   <em>//注：这里常用动词有GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等</em> </li>
+<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
+<li>回车    <em>//注这部分只能是回车</em></li>
+<li>要上传的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>请求如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-d9f5453925f18d8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="请求"><br><em>说明：<br>1）请求最多包含四部分，最少包含三部分，第四部分上传的数据可以没有；<br>2）第三部分只能是一个回车（\n）；<br>3）这里的路径包括「查询参数」，但不包括「锚点」；<br>4）如果你没有写路径，那么路径默认为 /；</em><br>##2. HTTP响应<br>####请求的结构最多包含下面四部分：</li>
+<li>协议/版本号 状态码 状态解释   <em>//注：这里常用状态码有2××（成功）、3××（重定向）、4××（客户端错误）、5××（服务器错误）等</em> </li>
+<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
+<li>回车    <em>//注这部分只能是回车</em></li>
+<li>要下载的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>响应如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-8c1b8194464a3ad8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-0260df081b500422.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应下载的数据"></li>
+</ul>
+<p><em>说明：第三部分永远都是一个回车（\n）；</em></p>
+<p>##3. 用Chrome开发者工具查看 HTTP 请求与响应内容<br>1 打开Chrome浏览器，右键，点击检查，进入开发者工具，并点击Network；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-242522b89bf51b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"><br>2 输入访问的网址，如<code>https://www.baidu.com/s?wd=hello</code>，刷新页面，可以看到浏览器发出很多请求；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-ad9416bea1bb78da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f3fc33d81868af23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"><br>3 点击一个请求Name进入，并点击Request Headers目录的view source，就可以看到具体的请求内容,如果有请求的第四部分，那么在 FormData 可以看到；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-e3670a8fca1a8df8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f45b1ef5e4c82792.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="5"><br>4 同理，点击一个Response Headers目录的view source，就可以看到服务器对该请求的响应内容，点击Response栏可以查看响应的第4部分；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-584e8d2ff8b56091.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="6"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-8964196b2637387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="7"></p>
+<p>##4. http命令curl<br>1 curl命令含义：从服务器传输数据或向服务器传输数据，支持大多数协议，包括HTTP，FTP和POP3等。<br>2 curl主要用法：</p>
+<ul>
+<li>-s/–silent：静音模式</li>
+<li>-S/–show-error：显示错误</li>
+<li>-x/–proxy &lt;host[:port]&gt; ：在给定的端口上使用HTTP代理</li>
+<li>-X/–request <command>：指定什么命令</li>
+<li>-v：显示请求详细信息</li>
+<li>-V/–version：显示版本信息</li>
+<li>-H/–header <line>：自定义头信息传递给服务器</line></li>
+<li>-d/–data <data>：HTTP POST方式传送数据<br>更多用法详见<a href="https://www.cnblogs.com/duhuo/p/5695256.html" target="_blank" rel="noopener">Linux curl命令详解</a></data></li>
+</ul>
+
+          
+        
       
     </div>
-    <footer>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
       
-        
-        
+
       
-      <div class="clearfix"></div>
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
   </div>
-</article>
-
-
-
-
   
-<article class="post">
   
-    <div class="gallery">
-  <div class="photoset">
+  
+  </article>
+
+
     
-      <img src>
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/03/第二篇博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wenconglan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LoganBlog">
+    </span>
+
     
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-  <header>
-      
-      
-  
-    <h1 class="title"><a href="/2019/03/08/hello-world/">Hello World</a></h1>
-  
+      <header class="post-header">
 
-      <time datetime="2019-03-08T07:35:17.981Z"><a href="/2019/03/08/hello-world/">2019-03-08</a></time>
-      
-  </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-	 
-	     <p style="margin:20px 0; color:#9f9f9f; font-size:12px;">
-<span>Posted by <a style="color:#9f9f9f;" href><strong></strong></a> - 2019-03-08</span><br>
-<span style="line-height:13px;">如需转载，请注明： 本文来自 <a style="color:#9f9f9f;" href="http://yoursite.com"><strong>LoganBlog</strong></a></span>
-</p>
-       	 
-      
-    </div>
-    <footer>
-      
         
         
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/03/第二篇博客/" itemprop="url">第二篇博客</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-03T12:50:00+08:00">
+                2019-03-03
+              </time>
+            
 
+            
 
+            
+          </span>
 
-  
-<article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
-      <img src>
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-  <header>
-      
-      
-  
-    <h1 class="title"><a href="/2019/03/02/第二篇博客/">第二篇博客</a></h1>
-  
 
-      <time datetime="2019-03-02T04:50:00.000Z"><a href="/2019/03/02/第二篇博客/">2019-03-02</a></time>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-  </header>
-    <div class="entry">
       
-        <p>##1.ls<br><strong>1.</strong>命令含义：List directory contents，用来显示目录或具体文件列表。<br><strong>2.</strong>主要用法示例：</p>
+
+      
+        
+          
+            <p>##1.ls<br><strong>1.</strong>命令含义：List directory contents，用来显示目录或具体文件列表。<br><strong>2.</strong>主要用法示例：</p>
 <ul>
 <li>#####ls -1：每行列出一个文件，即以单列形式列出。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-50c169842c9d102d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -1"></li>
 <li>#####ls -a：列出所有文件，包括隐藏文件。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-72ea8b0413561cef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -a"></li>
@@ -533,46 +825,555 @@
 <li>#####touch file：修改file的时间属性，如果file不存在，则将创建一个新的空白文件。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-b9ca11a05159bb0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="touch.png"><br>##4.命令行查询网站<a href="https://explainshell.com/explain?cmd=ls+-lrt" target="_blank" rel="noopener">explainshell.com</a>使用说明<br>该网站几乎能够查询所有Linux命令的含义，其界面如下图：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-375b88e142e77db8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="命令行释义查询"></li>
 </ul>
 
-	 
-	     <p style="margin:20px 0; color:#9f9f9f; font-size:12px;">
-<span>Posted by <a style="color:#9f9f9f;" href><strong></strong></a> - 2019-03-02</span><br>
-<span style="line-height:13px;">如需转载，请注明： 本文来自 <a style="color:#9f9f9f;" href="http://yoursite.com"><strong>LoganBlog</strong></a></span>
-</p>
-       	 
+          
+        
       
     </div>
-    <footer>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
       
-        
-        
+
       
-      <div class="clearfix"></div>
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
   </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
   
   
-</nav></div>
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/01/开博大吉/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wenconglan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LoganBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/01/开博大吉/" itemprop="url">开博大吉，第一个博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-01T15:50:00+08:00">
+                2019-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>我是Logan,我是好人</p>
+
+          
+        
+      
     </div>
-    <div class="tabbar" onload="divideTabBar()">
-	
-      <div class="tabbaritem"><a class="next" href="/">Home</a></div>
     
-      <div class="tabbaritem"><a class="next" href="/archives/">Archives</a></div>
     
-      <div class="tabbaritem"><a class="next" href="/about/">About</a></div>
     
-      <div class="tabbaritem"><a class="next" href="/atom.xml">Subscribe</a></div>
+
     
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/01/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wenconglan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LoganBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/01/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-01T12:50:00+08:00">
+                2019-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">wenconglan</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wenconglan</span>
+
+  
 </div>
 
 
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
