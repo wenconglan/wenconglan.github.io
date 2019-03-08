@@ -1,564 +1,506 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
 
-  
+<head>
   <title>LoganBlog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LoganBlog">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="LoganBlog">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LoganBlog">
-  
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="LoganBlog">
+    <meta name="author" content="wenconglan">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
     <link rel="alternate" href="/atom.xml" title="LoganBlog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
   
   
-    <link rel="icon" href="/favicon.png">
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
 </head>
-</html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">LoganBlog</a>
-      </h1>
-      
+
+<!--
+<body class="home-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close">
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">LoganBlog</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+</div>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
+                        <p></p>
+                        
+                        <h2></h2>
+                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- // .col-md-12 -->
+        </div>
+        <div class="herofade beige-dk"></div>
     </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-第三篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/第三篇博客/" class="article-date">
-  <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/第三篇博客/">第三篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##1. HTTP请求</p>
-<p>####请求的结构包含下面四部分：</p>
-<ul>
-<li>动词 路径 协议/版本   <em>//注：这里常用动词有GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等</em> </li>
-<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
-<li>回车    <em>//注这部分只能是回车</em></li>
-<li>要上传的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>请求如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-d9f5453925f18d8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="请求"><br><em>说明：<br>1）请求最多包含四部分，最少包含三部分，第四部分上传的数据可以没有；<br>2）第三部分只能是一个回车（\n）；<br>3）这里的路径包括「查询参数」，但不包括「锚点」；<br>4）如果你没有写路径，那么路径默认为 /；</em><br>##2. HTTP响应<br>####请求的结构最多包含下面四部分：</li>
-<li>协议/版本号 状态码 状态解释   <em>//注：这里常用状态码有2××（成功）、3××（重定向）、4××（客户端错误）、5××（服务器错误）等</em> </li>
-<li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
-<li>回车    <em>//注这部分只能是回车</em></li>
-<li>要下载的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>响应如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-8c1b8194464a3ad8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-0260df081b500422.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应下载的数据"></li>
-</ul>
-<p><em>说明：第三部分永远都是一个回车（\n）；</em></p>
-<p>##3. 用Chrome开发者工具查看 HTTP 请求与响应内容<br>1 打开Chrome浏览器，右键，点击检查，进入开发者工具，并点击Network；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-242522b89bf51b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"><br>2 输入访问的网址，如<code>https://www.baidu.com/s?wd=hello</code>，刷新页面，可以看到浏览器发出很多请求；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-ad9416bea1bb78da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f3fc33d81868af23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"><br>3 点击一个请求Name进入，并点击Request Headers目录的view source，就可以看到具体的请求内容,如果有请求的第四部分，那么在 FormData 可以看到；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-e3670a8fca1a8df8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-f45b1ef5e4c82792.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="5"><br>4 同理，点击一个Response Headers目录的view source，就可以看到服务器对该请求的响应内容，点击Response栏可以查看响应的第4部分；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-584e8d2ff8b56091.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="6"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-8964196b2637387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="7"></p>
-<p>##4. http命令curl<br>1 curl命令含义：从服务器传输数据或向服务器传输数据，支持大多数协议，包括HTTP，FTP和POP3等。<br>2 curl主要用法：</p>
-<ul>
-<li>-s/–silent：静音模式</li>
-<li>-S/–show-error：显示错误</li>
-<li>-x/–proxy &lt;host[:port]&gt; ：在给定的端口上使用HTTP代理</li>
-<li>-X/–request <command>：指定什么命令</li>
-<li>-v：显示请求详细信息</li>
-<li>-V/–version：显示版本信息</li>
-<li>-H/–header <line>：自定义头信息传递给服务器</line></li>
-<li>-d/–data <data>：HTTP POST方式传送数据<br>更多用法详见<a href="https://www.cnblogs.com/duhuo/p/5695256.html" target="_blank" rel="noopener">Linux curl命令详解</a></data></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/第三篇博客/" data-id="cjszrhyyl000388v41bye0r4g" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第五篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/第五篇博客/" class="article-date">
-  <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/第五篇博客/">第五篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/第五篇博客/" data-id="cjszrhyyn000488v4ws22kvd0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/123456/">123456</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第四篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/第四篇博客/" class="article-date">
-  <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/第四篇博客/">第四篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###1.HTML5文本声明</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;  //声明文档为HTML5文档</span><br></pre></td></tr></table></figure>
-<blockquote>
-<ol>
-<li>声明文档类型为HTML5文件,文档声明必须放在HTML文档的第一行且必不可少。</li>
-</ol>
-</blockquote>
-<p>###2.meta标签<br>1.charset属性：单独使用，设置文档字符集及编码方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;   //文档设置为UTF-8编码方式</span><br></pre></td></tr></table></figure></p>
-<p>常见的属性值：</p>
-<blockquote>
-<p>GBK：扩展的国标编码;<br>UTF-8: Unicode码采用UTF-8编码方式;</p>
-</blockquote>
-<p>2.http-equiv属性：用于声明浏览器如何解释编译文件，需配合content属性使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=&quot;属性值&quot; content=&quot;属性值详细内容&quot;&gt; //在content中描述实际的属性值内容</span><br></pre></td></tr></table></figure></p>
-<p>常用属性值：</p>
-<blockquote>
-<p>Content-Type:HTML4.01之前的文档内容编码声明;<br>refresh:网页刷新;<br>set-Cookie:设置浏览器cookie缓存;</p>
-</blockquote>
-<p>3.name属性：主要用于给搜索引擎提供必要信息,需配合content属性使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;属性值&quot; content=&quot;属性值详细内容&quot;&gt; //在content中描述实际的属性值内容</span><br></pre></td></tr></table></figure></p>
-<p>常用属性值：</p>
-<blockquote>
-<p>author:作者，声明网站作者；<br>keywords:网站关键字，多个关键字，用英文逗号分隔；<br>description:网页描述，搜索引擎显示在title下的描述内容；</p>
-</blockquote>
-<p>###3.link标签:用于为网页链接各种文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;icon&quot; href=&quot;img/icon.png&quot; &gt;</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>常用属性：<br>rel：用于表明被链接文件与当前文件关系;<br>type：表明被链接文件是什么类型，可省略;<br>href：表明链接文件的地址;</p>
-</blockquote>
-<p>###4.title标签:网页的标题,即网页选项卡上的文字。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;title&gt; 网页名称 &lt;/title&gt;</span><br></pre></td></tr></table></figure></p>
-<p>###5.常见的块级标签</p>
-<p>######1. 块级标签：占据一整行，高度、行高、内边距和外边距都可以改变，宽度和游览器的宽度一样，和内容无关，可以容纳块级标签和其他行内标签。</p>
-<blockquote>
-<p>标题标签:<code>&lt;h1&gt;&lt;/h1&gt;...&lt;h6&gt;&lt;/h6&gt;</code><br>水平线:<code>&lt;hr/&gt;</code><br>段落:<code>&lt;p&gt;&lt;/p&gt;</code><br>换行:<code>&lt;br/&gt;</code><br>引用:<code>&lt;blockquote&lt;/blockquote&gt;</code><br>预格式:<code>&lt;pre&gt;&lt;/pre&gt;</code><br>引用标签:<code>&lt;blockquote&gt;&lt;/blockquote&gt;</code> //表明标签中的文字，为引用的内容，浏览器显示为等宽字体，并缩进<br>预格式标签<code>&lt;pre&gt;&lt;/pre&gt;</code> //浏览器解析时，会按照等宽字体显示，并保留标签内的空格和回车,常用于保留代码格式。</p>
-</blockquote>
-<p>######2. 有序列表ol (order list)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">&lt;li&gt;1.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;2.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;3.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;4.内容&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure></p>
-<p>######3.无序列表ul(unorder list)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure></p>
-<p>######4.定义描述列表dl<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;dt&gt;标题1&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;描述项1-1&lt;/dd&gt;</span><br><span class="line">&lt;dd&gt;描述项1-2&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;标题2&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;描述项2-1&lt;/dd&gt;</span><br><span class="line">&lt;dd&gt;描述项2-2&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>一般情况下,标题dt只有一项。描述项dd可以有多项;浏览器显示时,标题顶格显示,dd缩进显示</p>
-</blockquote>
-<p>######5.图片组合标签figure<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;figure&gt;</span><br><span class="line">&lt;img src=<span class="string">"img/icon.png"</span>&gt;  <span class="regexp">//src</span>表示图片的路径</span><br><span class="line">&lt;figcaption&gt;小图标icon&lt;<span class="regexp">/figcaption&gt; /</span><span class="regexp">/图片的标题</span></span><br><span class="line"><span class="regexp">&lt;/figure</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>figure标签有两个子标签img和figcaption：<br>浏览器显示为：图片与标题上下排列，且整体向后缩进一个单位。</p>
-</blockquote>
-<p>######6.分区标签div<br>常配合CSS使用，为网页中最常用的分区标签，网页布局时常用，一般带class属性分类。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;width：100%; height：100px; &quot;&gt;</span><br><span class="line">&lt;h1&gt;标题&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>###6.常见的行内标签</p>
-<p>######1. 行内标签：只占内容宽度大小、高度、行高，内边距和外边距是可以部分可以改变的。</p>
-<blockquote>
-<p>span：文本，用于包裹一部分文字，进行特定样式的修改文本<br>img：图片<br>em：强调，浏览器显示为倾斜<br>strong：强调，浏览器显示为加粗<br>q：短引用<br>a：超链接<br>i：倾斜<br>b：加粗<br>small：缩小字体 //small标签可多层嵌套，表示比默认字体小一号，可直到小到最小号为止<br>big：放大字体  //也可多层嵌套，直到最大<br>u：下划线</p>
-</blockquote>
-<p>######2. strong/em/i/b 标签的区别</p>
-<blockquote>
-<ol>
-<li>em和strong都表示强调，strong&gt;em,strong和em标签均可多层嵌套，表示强调程度的递增。</li>
-<li>em和i都能倾斜，Strong和b都能加粗。但是Strong和em多了一层强调的语义。可以帮助搜索引擎快速抓取网站重点,且html5要求开发者尽可能实现代码的语义化。</li>
-</ol>
-</blockquote>
-<p>######3.img 标签</p>
-<ol>
-<li>src属性：表示图片引用路径。<blockquote>
-<p>常见路径的写法：<br>①相对路径：<br>1)当图片在下层目录时：目录名/图片名 (<code>img/abc.jpg</code>)<br>2)当图片与当前目录时：图片名(<code>src=&quot;abc.jpg&quot;</code>)<br>3)当图片在上层时：../图片名 (<code>src=&quot;../abc.jpg&quot;</code>)<br>②绝对路径：写法file：///E:/aaa.png 一般严禁使用<br>③网络连接：直接使用图片的网络地址,但由于图片在别的服务器,不可控,故不建议使用</p>
-</blockquote>
-</li>
-<li>title属性：图片的标题。当鼠标指到时,可显示的提示文字。</li>
-<li>alt属性：当图片无法加载时显示的文字。</li>
-<li>width/height属性：图片的尺寸。</li>
-<li>align：图片周围的文字，相对于图片的排列方式。属性值：top/center/bottom</li>
-</ol>
-<p>######4.table标签</p>
-<blockquote>
-<p><code>&lt;table&gt;&lt;/table&gt;</code>表格框<br><code>&lt;thead&gt;&lt;/thead&gt;</code>表头<br><code>&lt;tbody&gt;&lt;/tbody&gt;</code>表身<br><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code>表尾<br><code>&lt;tr&gt;&lt;/tr&gt;</code>表行<br><code>&lt;th&gt;&lt;/th&gt;</code>表头 //默认加粗且在单元格居中显示<br><code>&lt;td&gt;&lt;/td&gt;</code>表数据</p>
-</blockquote>
-<p>######1)常用属性</p>
-<blockquote>
-<p>border：表格边框属性；当使用border=”1”设置边框时，会在所有td以及table上嵌套边框，当border加大时，只有table框会加粗。<br>cellspacing：单元格与单元格之间的间隙。当cellspacing=”0”时，单元格之间的间隙为0，但边框线并不会合并。<br>合并边框的写法style=”border-collapse:collapse;” 使用边框合并时，无需设置cellspacing。<br>cellpadding：单元格内边距，单元格中文字与单元格边框之间的距离。<br>width/height：表格的宽高<br>align：设置表格在父容器中的对齐方式 ，left/居左 center/居中 right/居右<br>当表格使用align属性时，相当于使表格浮动，可能会导致表格后面的元素受表格浮动影响，导致布局错乱。<br>bgcolor：背景色<br>background：背景图，后接相对路径。背景图和背景色同时生效时，图会覆盖背景色<br>bordercolor：设置边框颜色</p>
-</blockquote>
-<p>######5.form标签<br>常用属性：</p>
-<blockquote>
-<p>saction：表单需要提交的服务器地址<br>method：表单提交数据使用的方法,get/post<br>POST上传数据的形式：链接URL地址?name1=value1&amp;name2=value2<br>form内必须要有input标签才能提交数据</p>
-</blockquote>
-<p>######6.input标签</p>
-<p>######1)常用属性:</p>
-<blockquote>
-<p>type：设置input的输入类型<br>name：给input输入框命名。一般情况下,name属性必不可少<br>value：input输入框的默认值<br>placeholder：输入框的提示内容。当input有默认的value或输入值时,placeholder消失</p>
-</blockquote>
-<p>######2)type的常用属性值】</p>
-<blockquote>
-<p>text：文本输入框<br>password：密码输入框,输入内容默认显示小黑点<br>radio：单选框<br>checkbox：复选框<br> <em>使用radio/checkbox时,value属性必填。提交时,提交的为value中的默认值；<br>  radio/checkbox凭借name属性,确定是否属于同一组,name相同为同组,只能选一个<br>  使用checked=”checked”属性,设置默认选中项</em><br>file：文件上传<br>使用accept=”类型”,设置只能上传的文件类型,如 accept=image/* 表示任意格式图片<br>submit：提交按钮,将所有表单数据提交至后台服务器<br>reset： 重置表单数据<br>image：图形提交按钮,跟submit一样,具有表单提交功能,使用src属性确定图片路径<br>button：普通按钮,无法提交的按钮</p>
-</blockquote>
-<p>######3)属性名=属性值的情况</p>
-<blockquote>
-<p>① checked=”checked” 设置radio<br>② multiple=”multiple” 设置select控件为多选，可在界面使用Ctrl+鼠标，进行多选。一般不用。<br>③ selected=”selected” 设置select控件，默认选中的option选项<br>④ readonly=”readonly”<br>⑤ disabled=”disabled”<br>当input被disabled时，该input的name和value数据将无法向后台传送<br>⑥ hidden=”hidden” 隐藏控件。等效于<input type="hiden"><br>⑦ nowrap=nowrap</p>
-</blockquote>
-<p>######7. 下拉列表select标签</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">&lt;option&gt; 选项&lt;/option&gt;  //option可以有N多个</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
-<p>######1)常用属性</p>
-<blockquote>
-<p>name属性,应该写在<select>上,所有选项只有一个name<br>multiple=”multiple” 设置select控件为多选,可在界面使用Ctrl+鼠标,进行多选,一般不用。</select></p>
-</blockquote>
-<p>######2)option常用属性：</p>
-<blockquote>
-<p>value=””:当option没有value属性时,往后台传递的是<option></option>标签中的文字；<br>当option有value属性时,往后台传递的是value属性的值。<br>title=””:鼠标指到后显示的文字。<br>selected=”selected”:默认选中。</p>
-<p><optgroup label="山东省"></optgroup> :用于将option标签进行分组,label属性表示分组名,或者用label标签包裹。</p>
-</blockquote>
-<p>######8. 文本域 textarea标签<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea&gt; &lt;/textarea&gt;</span><br></pre></td></tr></table></figure></p>
-<p>######1)常用属性</p>
-<blockquote>
-<p>cols=、 rows,设置宽高，但不常用<br>readonly=”readonly” 设置为只读模式，不允许编辑。<br>style=”resize: none;” 设置为宽高不允许修改。<br>style=”overflow: ;” 设置当文字超出区域时，如何处理。<br>  <em>也可以通过overflow-x/overflow-y分别设置水平垂直方向的显示方式。</em><br>常用属性值:hidden 超出区域的文字，隐藏无法显示<br>scroll 无论文字多少，均会显示滚动条<br>auto 自动，根据文字多少自动决定是否显示滚动条（默认样式）</p>
-</blockquote>
-<p>######9. iframe标签：嵌套页面,在一个页面中插入新页面,和a标签搭配使用。宽高可指定,支持相对路径<br>1.iframe  嵌套页面,在一个页面中插入新页面,常和a标签搭配使用。宽高可指定,支持相对路径<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &lt;iframe src=&quot;xx&quot; name=&quot;xxx&quot;&gt;</span><br><span class="line">``` </span><br><span class="line">&gt;frameborder属性 页面边框宽度</span><br><span class="line"></span><br><span class="line">######10.a标签</span><br></pre></td></tr></table></figure></p>
-<p><a href></a><br><code>`</code></p>
-<blockquote>
-<p>target属性：</p>
-<pre><code>1. _blank 新窗口打开页面
-2. _self 当前自身窗口打开页面
-3. _parent 父窗口打开页面
-4. _top 在顶级窗口打开页面
-</code></pre><p>a标签和iframe标签搭配使用案例：<br>       <em><iframe name="xxx" src="#" frameborder="0"><br>       <a target="xxx" href="http://qq.com">QQ</a><br>       <a target="xxx" href="http://www.baidu.com">百度一下</a><br>       iframe会加载一个完整页面，会很卡</iframe></em></p>
-</blockquote>
-<blockquote>
-<p>download<br>       下载</p>
-</blockquote>
-<blockquote>
-<p>href</p>
-<pre><code>1. #不会对服务器发起请求，此时a元素作为锚点，不跳转页面
-2. 除了#以外的值都会发起请求 ,但会返回到页面顶部
-3. 伪协议 javascript:; 点击后什么都不做,满足特殊需求
-</code></pre></blockquote>
-<p><em>　　　　　　　　声明：本博客版权归兰文聪和饥人谷所有，转载需说明来源！</em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/第四篇博客/" data-id="cjszrhyzo000788v42vu4dbtl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-开博大吉" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/开博大吉/" class="article-date">
-  <time datetime="2019-03-08T07:38:27.515Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/开博大吉/">开博大吉，第一个博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我是Logan,我是好人</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/开博大吉/" data-id="cjszrhyyb000188v4lobcy4zx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/08/hello-world/" class="article-date">
-  <time datetime="2019-03-08T07:35:17.981Z" itemprop="datePublished">2019-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/08/hello-world/" data-id="cjszrhyy2000088v44i3vk3zx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第二篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/02/第二篇博客/" class="article-date">
-  <time datetime="2019-03-02T04:50:00.000Z" itemprop="datePublished">2019-03-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/02/第二篇博客/">第二篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##1.ls<br><strong>1.</strong>命令含义：List directory contents，用来显示目录或具体文件列表。<br><strong>2.</strong>主要用法示例：</p>
-<ul>
-<li>#####ls -1：每行列出一个文件，即以单列形式列出。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-50c169842c9d102d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -1"></li>
-<li>#####ls -a：列出所有文件，包括隐藏文件。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-72ea8b0413561cef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -a"></li>
-<li>#####ls -la：所有文件的长格式列表（含权限、所有权、大小和修改日期）。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-b6ce0960aad21392.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -la"></li>
-<li>#####ls -lh：使用人可读单位（KB，MB，GB）显示大小的长格式列表。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-3bb84db6268d21a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -lh"></li>
-<li>#####ls -lS：按大小排序的长格式列表（降序）。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-5205e16be253a0da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -lS"></li>
-<li>#####ls -ltr：按大小排序的长格式列表（降序）。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-509f7bbb0e4a5ae5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ls -ltr"><br>##2.cat<br><strong>1.</strong>命令含义：Print and concatenate files，打印、合并文件。<br><strong>2.</strong>主要用法示例：</li>
-<li>#####cat file：将文件内容打印显示。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-2d25ef4785108cca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cat file"></li>
-<li>#####cat file1 file2&gt; target_file：将多个文件合并到目标文件中。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-b4d27ab7600d4541.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cat file1 file2&gt; target_file"></li>
-<li><h5 id="cat-file1-file2-gt-gt-target-file：将几个文件附加到目标文件中。"><a href="#cat-file1-file2-gt-gt-target-file：将几个文件附加到目标文件中。" class="headerlink" title="cat file1 file2 &gt;&gt; target_file：将几个文件附加到目标文件中。"></a>cat file1 file2 &gt;&gt; target_file：将几个文件附加到目标文件中。</h5><img src="https://upload-images.jianshu.io/upload_images/2124235-adf54fe154dfcb6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"><br>##3.mv<br><strong>1.</strong>命令含义：Move or rename files and directories，移动或重命名文件和目录。<br><strong>2.</strong>主要用法示例：</li>
-<li>#####mv file1.txt file2.txt：将file1文本重命名为file2。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-e7b6d29e97b29bac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="重命名"></li>
-<li>#####mv file1.txt file2：讲file1文本移动到file2目录。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-673cdb3c2f288f9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="移动"><br>##4.touch<br><strong>1.</strong>命令含义：用于修改文件或者目录的时间属性，包括存取时间和更改时间。若文件不存在，系统会建立一个新的空白文件。<br><strong>2.</strong>主要用法示例：</li>
-<li>#####touch file：修改file的时间属性，如果file不存在，则将创建一个新的空白文件。<br><img src="https://upload-images.jianshu.io/upload_images/2124235-b9ca11a05159bb0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="touch.png"><br>##4.命令行查询网站<a href="https://explainshell.com/explain?cmd=ls+-lrt" target="_blank" rel="noopener">explainshell.com</a>使用说明<br>该网站几乎能够查询所有Linux命令的含义，其界面如下图：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-375b88e142e77db8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="命令行释义查询"></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/02/第二篇博客/" data-id="cjszrhyye000288v4nyk2ijkk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
 </section>
+
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
+
+<!-- ============================ END Hero Image =========================== -->
+<!-- ============================ Content =========================== -->
+
+<section id="intro">
+    <div class="container">
         
-          <aside id="sidebar">
-  
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/03/08/第三篇博客/">第三篇博客</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">
+          2019-03-08
+      </time>
     
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        ##1. HTTP请求
+####请求的结构包含下面四部分：
 
-  
+动词 路径 协议/版本   //注：这里常用动词有GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等 
+Key: value     //注：这部分可以包含多个Key和对应的value
+回车    //注这部分只能是回车
+要上传的数据####示例：用git bash发出一个请求curl -s -v -H &quot;lan: first requ
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/03/08/第三篇博客/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/03/08/第四篇博客/">第四篇博客</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">
+          2019-03-08
+      </time>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/123456/">123456</a></li></ul>
-    </div>
-  </div>
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        ###1.HTML5文本声明
+1&lt;!DOCTYPE html&gt;  //声明文档为HTML5文档
 
 
-  
+声明文档类型为HTML5文件,文档声明必须放在HTML文档的第一行且必不可少。
+
+
+###2.meta标签1.charset属性：单独使用，设置文档字符集及编码方式。1&lt;meta charset=&quot;UTF-8&quot;&gt;   //文档设置为UTF-8编码方式
+常见的属性值：
+
+GBK：扩展的国标编码;U
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/03/08/第四篇博客/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/03/08/第五篇博客/">第五篇博客</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-03-08T07:50:09.000Z" itemprop="datePublished">
+          2019-03-08
+      </time>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/123456/" style="font-size: 10px;">123456</a>
-    </div>
-  </div>
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
+    | 
+    <a href="/tags/123456/">123456</a>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/03/08/第五篇博客/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
-          <li>
-            <a href="/2019/03/08/第三篇博客/">第三篇博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/08/第五篇博客/">第五篇博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/08/第四篇博客/">第四篇博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/08/开博大吉/">开博大吉，第一个博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/08/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/03/08/开博大吉/">开博大吉，第一个博客</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-03-08T07:38:27.515Z" itemprop="datePublished">
+          2019-03-08
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        我是Logan,我是好人
 
-  
-</aside>
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/03/08/开博大吉/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 wenconglan<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/03/08/hello-world/">Hello World</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-03-08T07:35:17.981Z" itemprop="datePublished">
+          2019-03-08
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new p
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/03/08/hello-world/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/03/02/第二篇博客/">第二篇博客</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-03-02T04:50:00.000Z" itemprop="datePublished">
+          2019-03-02
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        ##1.ls1.命令含义：List directory contents，用来显示目录或具体文件列表。2.主要用法示例：
+
+#####ls -1：每行列出一个文件，即以单列形式列出。
+#####ls -a：列出所有文件，包括隐藏文件。
+#####ls -la：所有文件的长格式列表（含权限、所有权、大小和修改日期）。
+#####ls -lh：使用人可读单位（KB，MB，GB）显示大小的长格式列表。
+#####ls -lS：按大小排序的长格
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/03/02/第二篇博客/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <nav class="pagination" role="pagination">
+          
+          
+        </nav>
     </div>
-  </div>
+</section>
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+        </div>
+    </div>
+</section>
+<!-- ============================ END Content =========================== -->
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By wenconglan. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
 
 
-<script src="/js/script.js"></script>
 
-
-
-  </div>
+      
 </body>
 </html>
