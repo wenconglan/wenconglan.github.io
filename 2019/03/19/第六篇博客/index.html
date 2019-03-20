@@ -220,9 +220,10 @@
 </code></pre><blockquote>
 <p>注：对象的key符合变量标识符规定命名时可以用obj.key（取值特例）进行取值，否则必须用obj[‘key’]进行取值，推荐加引号；</p>
 </blockquote>
-<p>####用delete对象删除内容：<br>    delete person[‘name’] //会删除key和value</p>
-<p>####如何遍历对象，用for…in：<br>    for（var key in obj）<br>    console.log(key, obj[‘key’])  //obj的key和value会随机的打印出来,不按顺序</p>
-<h2 id="7、查询数据类型："><a href="#7、查询数据类型：" class="headerlink" title="7、查询数据类型："></a>7、查询数据类型：</h2><h4 id="用typeof查询数据类型，其结果如下："><a href="#用typeof查询数据类型，其结果如下：" class="headerlink" title="用typeof查询数据类型，其结果如下："></a>用typeof查询数据类型，其结果如下：</h4><pre><code>typeof number // number
+<h4 id="用delete对象删除内容："><a href="#用delete对象删除内容：" class="headerlink" title="用delete对象删除内容："></a>用delete对象删除内容：</h4><pre><code>delete person[&apos;name&apos;] //会删除key和value
+</code></pre><h4 id="如何遍历对象，用for…in："><a href="#如何遍历对象，用for…in：" class="headerlink" title="如何遍历对象，用for…in："></a>如何遍历对象，用for…in：</h4><pre><code>for（var key in obj）
+console.log(key, obj[&apos;key&apos;])  //obj的key和value会随机的打印出来,不按顺序
+</code></pre><h2 id="7、查询数据类型："><a href="#7、查询数据类型：" class="headerlink" title="7、查询数据类型："></a>7、查询数据类型：</h2><h4 id="用typeof查询数据类型，其结果如下："><a href="#用typeof查询数据类型，其结果如下：" class="headerlink" title="用typeof查询数据类型，其结果如下："></a>用typeof查询数据类型，其结果如下：</h4><pre><code>typeof number // number
 typeof string // string
 typeof boolean // boolean
 typeof symbol // symbol

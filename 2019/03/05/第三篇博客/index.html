@@ -190,13 +190,11 @@
 </ul>
 <p><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>请求如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-d9f5453925f18d8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="请求"></p>
 <p><em>说明：<br>1）请求最多包含四部分，最少包含三部分，第四部分上传的数据可以没有；<br>2）第三部分只能是一个回车（\n）；<br>3）这里的路径包括「查询参数」，但不包括「锚点」；<br>4）如果你没有写路径，那么路径默认为 /；</em></p>
-<p>##2. HTTP响应</p>
-<p>####请求的结构最多包含下面四部分：</p>
-<ul>
+<h2 id="2-HTTP响应"><a href="#2-HTTP响应" class="headerlink" title="2. HTTP响应"></a>2. HTTP响应</h2><h4 id="请求的结构最多包含下面四部分："><a href="#请求的结构最多包含下面四部分：" class="headerlink" title="请求的结构最多包含下面四部分："></a>请求的结构最多包含下面四部分：</h4><ul>
 <li>协议/版本号 状态码 状态解释   <em>//注：这里常用状态码有2××（成功）、3××（重定向）、4××（客户端错误）、5××（服务器错误）等</em> </li>
 <li>Key: value     <em>//注：这部分可以包含多个Key和对应的value</em></li>
 <li>回车    <em>//注这部分只能是回车</em></li>
-<li>要下载的数据<br>####示例：<br>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>响应如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-8c1b8194464a3ad8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-0260df081b500422.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应下载的数据"></li>
+<li>要下载的数据<h4 id="示例：-1"><a href="#示例：-1" class="headerlink" title="示例："></a>示例：</h4>用git bash发出一个请求<code>curl -s -v -H &quot;lan: first request&quot; -- &quot;https://www.baidu.com/s?wd=hello#5&quot;</code>  ：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-594e9d1fac80e00a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="request"><br>响应如下：<br><img src="https://upload-images.jianshu.io/upload_images/2124235-8c1b8194464a3ad8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应"><br><img src="https://upload-images.jianshu.io/upload_images/2124235-0260df081b500422.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="响应下载的数据"></li>
 </ul>
 <p><em>说明：第三部分永远都是一个回车（\n）；</em></p>
 <h2 id="3-用Chrome开发者工具查看-HTTP-请求与响应内容"><a href="#3-用Chrome开发者工具查看-HTTP-请求与响应内容" class="headerlink" title="3. 用Chrome开发者工具查看 HTTP 请求与响应内容"></a>3. 用Chrome开发者工具查看 HTTP 请求与响应内容</h2><p>1 打开Chrome浏览器，右键，点击检查，进入开发者工具，并点击Network；<br><img src="https://upload-images.jianshu.io/upload_images/2124235-242522b89bf51b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"></p>
