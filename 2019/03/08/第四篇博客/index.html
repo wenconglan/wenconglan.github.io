@@ -182,133 +182,347 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>###1.HTML5文本声明</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;  //声明文档为HTML5文档</span><br></pre></td></tr></table></figure>
+      		<h3 id="1-HTML5文本声明"><a href="#1-HTML5文本声明" class="headerlink" title="1.HTML5文本声明"></a>1.HTML5文本声明</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;  //声明文档为HTML5文档</span><br></pre></td></tr></table></figure>
 <blockquote>
 <ol>
 <li>声明文档类型为HTML5文件,文档声明必须放在HTML文档的第一行且必不可少。</li>
 </ol>
 </blockquote>
-<p>###2.meta标签<br>1.charset属性：单独使用，设置文档字符集及编码方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;   //文档设置为UTF-8编码方式</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-meta标签"><a href="#2-meta标签" class="headerlink" title="2.meta标签"></a>2.meta标签</h3><p>1.charset属性：单独使用，设置文档字符集及编码方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;   //文档设置为UTF-8编码方式</span><br></pre></td></tr></table></figure></p>
 <p>常见的属性值：</p>
 <blockquote>
-<p>GBK：扩展的国标编码;<br>UTF-8: Unicode码采用UTF-8编码方式;</p>
+<p>GBK：扩展的国标编码;</p>
+</blockquote>
+<blockquote>
+<p>UTF-8: Unicode码采用UTF-8编码方式;</p>
 </blockquote>
 <p>2.http-equiv属性：用于声明浏览器如何解释编译文件，需配合content属性使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=&quot;属性值&quot; content=&quot;属性值详细内容&quot;&gt; //在content中描述实际的属性值内容</span><br></pre></td></tr></table></figure></p>
 <p>常用属性值：</p>
 <blockquote>
-<p>Content-Type:HTML4.01之前的文档内容编码声明;<br>refresh:网页刷新;<br>set-Cookie:设置浏览器cookie缓存;</p>
+<p>Content-Type:HTML4.01之前的文档内容编码声明;</p>
+</blockquote>
+<blockquote>
+<p>refresh:网页刷新;</p>
+</blockquote>
+<blockquote>
+<p>set-Cookie:设置浏览器cookie缓存;</p>
 </blockquote>
 <p>3.name属性：主要用于给搜索引擎提供必要信息,需配合content属性使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;属性值&quot; content=&quot;属性值详细内容&quot;&gt; //在content中描述实际的属性值内容</span><br></pre></td></tr></table></figure></p>
 <p>常用属性值：</p>
 <blockquote>
-<p>author:作者，声明网站作者；<br>keywords:网站关键字，多个关键字，用英文逗号分隔；<br>description:网页描述，搜索引擎显示在title下的描述内容；</p>
+<p>author:作者，声明网站作者；</p>
 </blockquote>
-<p>###3.link标签:用于为网页链接各种文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;icon&quot; href=&quot;img/icon.png&quot; &gt;</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>常用属性：<br>rel：用于表明被链接文件与当前文件关系;<br>type：表明被链接文件是什么类型，可省略;<br>href：表明链接文件的地址;</p>
+<p>keywords:网站关键字，多个关键字，用英文逗号分隔；</p>
 </blockquote>
-<p>###4.title标签:网页的标题,即网页选项卡上的文字。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;title&gt; 网页名称 &lt;/title&gt;</span><br></pre></td></tr></table></figure></p>
-<p>###5.常见的块级标签</p>
-<p>######1. 块级标签：占据一整行，高度、行高、内边距和外边距都可以改变，宽度和游览器的宽度一样，和内容无关，可以容纳块级标签和其他行内标签。</p>
 <blockquote>
-<p>标题标签:<code>&lt;h1&gt;&lt;/h1&gt;...&lt;h6&gt;&lt;/h6&gt;</code><br>水平线:<code>&lt;hr/&gt;</code><br>段落:<code>&lt;p&gt;&lt;/p&gt;</code><br>换行:<code>&lt;br/&gt;</code><br>引用:<code>&lt;blockquote&lt;/blockquote&gt;</code><br>预格式:<code>&lt;pre&gt;&lt;/pre&gt;</code><br>引用标签:<code>&lt;blockquote&gt;&lt;/blockquote&gt;</code> //表明标签中的文字，为引用的内容，浏览器显示为等宽字体，并缩进<br>预格式标签<code>&lt;pre&gt;&lt;/pre&gt;</code> //浏览器解析时，会按照等宽字体显示，并保留标签内的空格和回车,常用于保留代码格式。</p>
+<p>description:网页描述，搜索引擎显示在title下的描述内容；</p>
 </blockquote>
-<p>######2. 有序列表ol (order list)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">&lt;li&gt;1.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;2.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;3.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;4.内容&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure></p>
-<p>######3.无序列表ul(unorder list)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure></p>
-<p>######4.定义描述列表dl<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;dt&gt;标题1&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;描述项1-1&lt;/dd&gt;</span><br><span class="line">&lt;dd&gt;描述项1-2&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;标题2&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;描述项2-1&lt;/dd&gt;</span><br><span class="line">&lt;dd&gt;描述项2-2&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-link标签-用于为网页链接各种文件。"><a href="#3-link标签-用于为网页链接各种文件。" class="headerlink" title="3.link标签:用于为网页链接各种文件。"></a>3.link标签:用于为网页链接各种文件。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;icon&quot; href=&quot;img/icon.png&quot; &gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>常用属性：</p>
+</blockquote>
+<blockquote>
+<p>rel：用于表明被链接文件与当前文件关系;</p>
+</blockquote>
+<blockquote>
+<p>type：表明被链接文件是什么类型，可省略;</p>
+</blockquote>
+<blockquote>
+<p>href：表明链接文件的地址;</p>
+</blockquote>
+<h3 id="4-title标签-网页的标题-即网页选项卡上的文字。"><a href="#4-title标签-网页的标题-即网页选项卡上的文字。" class="headerlink" title="4.title标签:网页的标题,即网页选项卡上的文字。"></a>4.title标签:网页的标题,即网页选项卡上的文字。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;title&gt; 网页名称 &lt;/title&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="5-常见的块级标签"><a href="#5-常见的块级标签" class="headerlink" title="5.常见的块级标签"></a>5.常见的块级标签</h3><h4 id="1-块级标签：占据一整行，高度、行高、内边距和外边距都可以改变，宽度和游览器的宽度一样，和内容无关，可以容纳块级标签和其他行内标签。"><a href="#1-块级标签：占据一整行，高度、行高、内边距和外边距都可以改变，宽度和游览器的宽度一样，和内容无关，可以容纳块级标签和其他行内标签。" class="headerlink" title="1. 块级标签：占据一整行，高度、行高、内边距和外边距都可以改变，宽度和游览器的宽度一样，和内容无关，可以容纳块级标签和其他行内标签。"></a>1. 块级标签：占据一整行，高度、行高、内边距和外边距都可以改变，宽度和游览器的宽度一样，和内容无关，可以容纳块级标签和其他行内标签。</h4><blockquote>
+<p>标题标签:<code>&lt;h1&gt;&lt;/h1&gt;...&lt;h6&gt;&lt;/h6&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>水平线:<code>&lt;hr/&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>段落:<code>&lt;p&gt;&lt;/p&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>换行:<code>&lt;br/&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>引用:<code>&lt;blockquote&lt;/blockquote&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>预格式:<code>&lt;pre&gt;&lt;/pre&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>引用标签:<code>&lt;blockquote&gt;&lt;/blockquote&gt;</code> //表明标签中的文字，为引用的内容，浏览器显示为等宽字体，并缩进</p>
+</blockquote>
+<blockquote>
+<p>预格式标签<code>&lt;pre&gt;&lt;/pre&gt;</code> //浏览器解析时，会按照等宽字体显示，并保留标签内的空格和回车,常用于保留代码格式。</p>
+</blockquote>
+<h4 id="2-有序列表ol-order-list"><a href="#2-有序列表ol-order-list" class="headerlink" title="2. 有序列表ol (order list)"></a>2. 有序列表ol (order list)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">&lt;li&gt;1.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;2.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;3.内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;4.内容&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-无序列表ul-unorder-list"><a href="#3-无序列表ul-unorder-list" class="headerlink" title="3.无序列表ul(unorder list)"></a>3.无序列表ul(unorder list)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;li&gt;无序内容&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="4-定义描述列表dl"><a href="#4-定义描述列表dl" class="headerlink" title="4.定义描述列表dl"></a>4.定义描述列表dl</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;dt&gt;标题1&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;描述项1-1&lt;/dd&gt;</span><br><span class="line">&lt;dd&gt;描述项1-2&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;标题2&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;描述项2-1&lt;/dd&gt;</span><br><span class="line">&lt;dd&gt;描述项2-2&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>一般情况下,标题dt只有一项。描述项dd可以有多项;浏览器显示时,标题顶格显示,dd缩进显示</p>
 </blockquote>
-<p>######5.图片组合标签figure<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;figure&gt;</span><br><span class="line">&lt;img src=<span class="string">"img/icon.png"</span>&gt;  <span class="regexp">//src</span>表示图片的路径</span><br><span class="line">&lt;figcaption&gt;小图标icon&lt;<span class="regexp">/figcaption&gt; /</span><span class="regexp">/图片的标题</span></span><br><span class="line"><span class="regexp">&lt;/figure</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<h4 id="5-图片组合标签figure"><a href="#5-图片组合标签figure" class="headerlink" title="5.图片组合标签figure"></a>5.图片组合标签figure</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;figure&gt;</span><br><span class="line">&lt;img src=<span class="string">"img/icon.png"</span>&gt;  <span class="regexp">//src</span>表示图片的路径</span><br><span class="line">&lt;figcaption&gt;小图标icon&lt;<span class="regexp">/figcaption&gt; /</span><span class="regexp">/图片的标题</span></span><br><span class="line"><span class="regexp">&lt;/figure</span>&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>figure标签有两个子标签img和figcaption：<br>浏览器显示为：图片与标题上下排列，且整体向后缩进一个单位。</p>
+<p>figure标签有两个子标签img和figcaption：</p>
 </blockquote>
-<p>######6.分区标签div<br>常配合CSS使用，为网页中最常用的分区标签，网页布局时常用，一般带class属性分类。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;width：100%; height：100px; &quot;&gt;</span><br><span class="line">&lt;h1&gt;标题&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>###6.常见的行内标签</p>
-<p>######1. 行内标签：只占内容宽度大小、高度、行高，内边距和外边距是可以部分可以改变的。</p>
 <blockquote>
-<p>span：文本，用于包裹一部分文字，进行特定样式的修改文本<br>img：图片<br>em：强调，浏览器显示为倾斜<br>strong：强调，浏览器显示为加粗<br>q：短引用<br>a：超链接<br>i：倾斜<br>b：加粗<br>small：缩小字体 //small标签可多层嵌套，表示比默认字体小一号，可直到小到最小号为止<br>big：放大字体  //也可多层嵌套，直到最大<br>u：下划线</p>
+<p>浏览器显示为：图片与标题上下排列，且整体向后缩进一个单位。</p>
 </blockquote>
-<p>######2. strong/em/i/b 标签的区别</p>
+<h4 id="6-分区标签div"><a href="#6-分区标签div" class="headerlink" title="6.分区标签div"></a>6.分区标签div</h4><p>常配合CSS使用，为网页中最常用的分区标签，网页布局时常用，一般带class属性分类。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;width：100%; height：100px; &quot;&gt;</span><br><span class="line">&lt;h1&gt;标题&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="6-常见的行内标签"><a href="#6-常见的行内标签" class="headerlink" title="6.常见的行内标签"></a>6.常见的行内标签</h3><h4 id="1-行内标签：只占内容宽度大小、高度、行高，内边距和外边距是可以部分可以改变的。"><a href="#1-行内标签：只占内容宽度大小、高度、行高，内边距和外边距是可以部分可以改变的。" class="headerlink" title="1. 行内标签：只占内容宽度大小、高度、行高，内边距和外边距是可以部分可以改变的。"></a>1. 行内标签：只占内容宽度大小、高度、行高，内边距和外边距是可以部分可以改变的。</h4><blockquote>
+<p>span：文本，用于包裹一部分文字，进行特定样式的修改文本</p>
+</blockquote>
 <blockquote>
+<p>img：图片</p>
+</blockquote>
+<blockquote>
+<p>em：强调，浏览器显示为倾斜</p>
+</blockquote>
+<blockquote>
+<p>strong：强调，浏览器显示为加粗</p>
+</blockquote>
+<blockquote>
+<p>q：短引用</p>
+</blockquote>
+<blockquote>
+<p>a：超链接</p>
+</blockquote>
+<blockquote>
+<p>i：倾斜</p>
+</blockquote>
+<blockquote>
+<p>b：加粗</p>
+</blockquote>
+<blockquote>
+<p>small：缩小字体 //small标签可多层嵌套，表示比默认字体小一号，可直到小到最小号为止</p>
+</blockquote>
+<blockquote>
+<p>big：放大字体  //也可多层嵌套，直到最大</p>
+</blockquote>
+<blockquote>
+<p>u：下划线</p>
+</blockquote>
+<h4 id="2-strong-em-i-b-标签的区别"><a href="#2-strong-em-i-b-标签的区别" class="headerlink" title="2. strong/em/i/b 标签的区别"></a>2. strong/em/i/b 标签的区别</h4><blockquote>
 <ol>
 <li>em和strong都表示强调，strong&gt;em,strong和em标签均可多层嵌套，表示强调程度的递增。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
 <li>em和i都能倾斜，Strong和b都能加粗。但是Strong和em多了一层强调的语义。可以帮助搜索引擎快速抓取网站重点,且html5要求开发者尽可能实现代码的语义化。</li>
 </ol>
 </blockquote>
-<p>######3.img 标签</p>
-<ol>
+<h4 id="3-img-标签"><a href="#3-img-标签" class="headerlink" title="3.img 标签"></a>3.img 标签</h4><ol>
 <li>src属性：表示图片引用路径。<blockquote>
-<p>常见路径的写法：<br>①相对路径：<br>1)当图片在下层目录时：目录名/图片名 (<code>img/abc.jpg</code>)<br>2)当图片与当前目录时：图片名(<code>src=&quot;abc.jpg&quot;</code>)<br>3)当图片在上层时：../图片名 (<code>src=&quot;../abc.jpg&quot;</code>)<br>②绝对路径：写法file：///E:/aaa.png 一般严禁使用<br>③网络连接：直接使用图片的网络地址,但由于图片在别的服务器,不可控,故不建议使用</p>
+<p>常见路径的写法：</p>
 </blockquote>
 </li>
-<li>title属性：图片的标题。当鼠标指到时,可显示的提示文字。</li>
-<li>alt属性：当图片无法加载时显示的文字。</li>
-<li>width/height属性：图片的尺寸。</li>
-<li>align：图片周围的文字，相对于图片的排列方式。属性值：top/center/bottom</li>
 </ol>
-<p>######4.table标签</p>
 <blockquote>
-<p><code>&lt;table&gt;&lt;/table&gt;</code>表格框<br><code>&lt;thead&gt;&lt;/thead&gt;</code>表头<br><code>&lt;tbody&gt;&lt;/tbody&gt;</code>表身<br><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code>表尾<br><code>&lt;tr&gt;&lt;/tr&gt;</code>表行<br><code>&lt;th&gt;&lt;/th&gt;</code>表头 //默认加粗且在单元格居中显示<br><code>&lt;td&gt;&lt;/td&gt;</code>表数据</p>
+<p>①相对路径：</p>
 </blockquote>
-<p>######1)常用属性</p>
 <blockquote>
-<p>border：表格边框属性；当使用border=”1”设置边框时，会在所有td以及table上嵌套边框，当border加大时，只有table框会加粗。<br>cellspacing：单元格与单元格之间的间隙。当cellspacing=”0”时，单元格之间的间隙为0，但边框线并不会合并。<br>合并边框的写法style=”border-collapse:collapse;” 使用边框合并时，无需设置cellspacing。<br>cellpadding：单元格内边距，单元格中文字与单元格边框之间的距离。<br>width/height：表格的宽高<br>align：设置表格在父容器中的对齐方式 ，left/居左 center/居中 right/居右<br>当表格使用align属性时，相当于使表格浮动，可能会导致表格后面的元素受表格浮动影响，导致布局错乱。<br>bgcolor：背景色<br>background：背景图，后接相对路径。背景图和背景色同时生效时，图会覆盖背景色<br>bordercolor：设置边框颜色</p>
+<p>1)当图片在下层目录时：目录名/图片名 (<code>img/abc.jpg</code>)</p>
 </blockquote>
-<p>######5.form标签<br>常用属性：</p>
 <blockquote>
-<p>saction：表单需要提交的服务器地址<br>method：表单提交数据使用的方法,get/post<br>POST上传数据的形式：链接URL地址?name1=value1&amp;name2=value2<br>form内必须要有input标签才能提交数据</p>
+<p>2)当图片与当前目录时：图片名(<code>src=&quot;abc.jpg&quot;</code>)</p>
 </blockquote>
-<p>######6.input标签</p>
-<p>######1)常用属性:</p>
 <blockquote>
-<p>type：设置input的输入类型<br>name：给input输入框命名。一般情况下,name属性必不可少<br>value：input输入框的默认值<br>placeholder：输入框的提示内容。当input有默认的value或输入值时,placeholder消失</p>
+<p>3)当图片在上层时：../图片名 (<code>src=&quot;../abc.jpg&quot;</code>)</p>
 </blockquote>
-<p>######2)type的常用属性值】</p>
 <blockquote>
-<p>text：文本输入框<br>password：密码输入框,输入内容默认显示小黑点<br>radio：单选框<br>checkbox：复选框<br> <em>使用radio/checkbox时,value属性必填。提交时,提交的为value中的默认值；<br>  radio/checkbox凭借name属性,确定是否属于同一组,name相同为同组,只能选一个<br>  使用checked=”checked”属性,设置默认选中项</em><br>file：文件上传<br>使用accept=”类型”,设置只能上传的文件类型,如 accept=image/* 表示任意格式图片<br>submit：提交按钮,将所有表单数据提交至后台服务器<br>reset： 重置表单数据<br>image：图形提交按钮,跟submit一样,具有表单提交功能,使用src属性确定图片路径<br>button：普通按钮,无法提交的按钮</p>
+<p>②绝对路径：写法file：///E:/aaa.png 一般严禁使用</p>
 </blockquote>
-<p>######3)属性名=属性值的情况</p>
 <blockquote>
-<p>① checked=”checked” 设置radio<br>② multiple=”multiple” 设置select控件为多选，可在界面使用Ctrl+鼠标，进行多选。一般不用。<br>③ selected=”selected” 设置select控件，默认选中的option选项<br>④ readonly=”readonly”<br>⑤ disabled=”disabled”<br>当input被disabled时，该input的name和value数据将无法向后台传送<br>⑥ hidden=”hidden” 隐藏控件。等效于<input type="hiden"><br>⑦ nowrap=nowrap</p>
+<p>③网络连接：直接使用图片的网络地址,但由于图片在别的服务器,不可控,故不建议使用</p>
 </blockquote>
-<p>######7. 下拉列表select标签</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">&lt;option&gt; 选项&lt;/option&gt;  //option可以有N多个</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
-<p>######1)常用属性</p>
-<blockquote>
-<p>name属性,应该写在<select>上,所有选项只有一个name<br>multiple=”multiple” 设置select控件为多选,可在界面使用Ctrl+鼠标,进行多选,一般不用。</select></p>
+<ol start="2">
+<li><p>title属性：图片的标题。当鼠标指到时,可显示的提示文字。</p>
+</li>
+<li><p>alt属性：当图片无法加载时显示的文字。</p>
+</li>
+<li><p>width/height属性：图片的尺寸。</p>
+</li>
+<li><p>align：图片周围的文字，相对于图片的排列方式。属性值：top/center/bottom</p>
+</li>
+</ol>
+<h4 id="4-table标签"><a href="#4-table标签" class="headerlink" title="4.table标签"></a>4.table标签</h4><blockquote>
+<p><code>&lt;table&gt;&lt;/table&gt;</code>表格框</p>
 </blockquote>
-<p>######2)option常用属性：</p>
 <blockquote>
-<p>value=””:当option没有value属性时,往后台传递的是<option></option>标签中的文字；<br>当option有value属性时,往后台传递的是value属性的值。<br>title=””:鼠标指到后显示的文字。<br>selected=”selected”:默认选中。</p>
+<p><code>&lt;thead&gt;&lt;/thead&gt;</code>表头</p>
+</blockquote>
+<blockquote>
+<p><code>&lt;tbody&gt;&lt;/tbody&gt;</code>表身</p>
+</blockquote>
+<blockquote>
+<p><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code>表尾</p>
+</blockquote>
+<blockquote>
+<p><code>&lt;tr&gt;&lt;/tr&gt;</code>表行</p>
+</blockquote>
+<blockquote>
+<p><code>&lt;th&gt;&lt;/th&gt;</code>表头 //默认加粗且在单元格居中显示</p>
+</blockquote>
+<blockquote>
+<p><code>&lt;td&gt;&lt;/td&gt;</code>表数据</p>
+</blockquote>
+<h4 id="1-常用属性"><a href="#1-常用属性" class="headerlink" title="1)常用属性"></a>1)常用属性</h4><blockquote>
+<p>border：表格边框属性；当使用border=”1”设置边框时，会在所有td以及table上嵌套边框，当border加大时，只有table框会加粗。</p>
+</blockquote>
+<blockquote>
+<p>cellspacing：单元格与单元格之间的间隙。当cellspacing=”0”时，单元格之间的间隙为0，但边框线并不会合并。</p>
+</blockquote>
+<blockquote>
+<p>合并边框的写法style=”border-collapse:collapse;” 使用边框合并时，无需设置cellspacing。</p>
+</blockquote>
+<blockquote>
+<p>cellpadding：单元格内边距，单元格中文字与单元格边框之间的距离。</p>
+</blockquote>
+<blockquote>
+<p>width/height：表格的宽高</p>
+</blockquote>
+<blockquote>
+<p>align：设置表格在父容器中的对齐方式 ，left/居左 center/居中 right/居右</p>
+</blockquote>
+<blockquote>
+<p>当表格使用align属性时，相当于使表格浮动，可能会导致表格后面的元素受表格浮动影响，导致布局错乱。</p>
+</blockquote>
+<blockquote>
+<p>bgcolor：背景色</p>
+</blockquote>
+<blockquote>
+<p>background：背景图，后接相对路径。背景图和背景色同时生效时，图会覆盖背景色</p>
+</blockquote>
+<blockquote>
+<p>bordercolor：设置边框颜色</p>
+</blockquote>
+<h4 id="5-form标签"><a href="#5-form标签" class="headerlink" title="5.form标签"></a>5.form标签</h4><p>常用属性：</p>
+<blockquote>
+<p>saction：表单需要提交的服务器地址</p>
+</blockquote>
+<blockquote>
+<p>method：表单提交数据使用的方法,get/post</p>
+</blockquote>
+<blockquote>
+<p>POST上传数据的形式：链接URL地址?name1=value1&amp;name2=value2</p>
+</blockquote>
+<blockquote>
+<p>form内必须要有input标签才能提交数据</p>
+</blockquote>
+<h4 id="6-input标签"><a href="#6-input标签" class="headerlink" title="6.input标签"></a>6.input标签</h4><h5 id="1-常用属性-1"><a href="#1-常用属性-1" class="headerlink" title="1)常用属性:"></a>1)常用属性:</h5><blockquote>
+<p>type：设置input的输入类型</p>
+</blockquote>
+<blockquote>
+<p>name：给input输入框命名。一般情况下,name属性必不可少</p>
+</blockquote>
+<blockquote>
+<p>value：input输入框的默认值</p>
+</blockquote>
+<blockquote>
+<p>placeholder：输入框的提示内容。当input有默认的value或输入值时,placeholder消失</p>
+</blockquote>
+<h5 id="2-type的常用属性值】"><a href="#2-type的常用属性值】" class="headerlink" title="2)type的常用属性值】"></a>2)type的常用属性值】</h5><blockquote>
+<p>text：文本输入框</p>
+</blockquote>
+<blockquote>
+<p>password：密码输入框,输入内容默认显示小黑点</p>
+</blockquote>
+<blockquote>
+<p>radio：单选框 </p>
+</blockquote>
+<blockquote>
+<p>checkbox：复选框</p>
+</blockquote>
+<blockquote>
+<p> <em>使用radio/checkbox时,value属性必填。提交时,提交的为value中的默认值；<br>  radio/checkbox凭借name属性,确定是否属于同一组,name相同为同组,只能选一个<br>  使用checked=”checked”属性,设置默认选中项</em></p>
+</blockquote>
+<blockquote>
+<p>file：文件上传<br>使用accept=”类型”,设置只能上传的文件类型,如 accept=image/* 表示任意格式图片</p>
+</blockquote>
+<blockquote>
+<p>submit：提交按钮,将所有表单数据提交至后台服务器</p>
+</blockquote>
+<blockquote>
+<p>reset： 重置表单数据</p>
+</blockquote>
+<blockquote>
+<p>image：图形提交按钮,跟submit一样,具有表单提交功能,使用src属性确定图片路径</p>
+</blockquote>
+<blockquote>
+<p>button：普通按钮,无法提交的按钮</p>
+</blockquote>
+<h5 id="3-属性名-属性值的情况"><a href="#3-属性名-属性值的情况" class="headerlink" title="3)属性名=属性值的情况"></a>3)属性名=属性值的情况</h5><blockquote>
+<p>① checked=”checked” 设置radio</p>
+</blockquote>
+<blockquote>
+<p>② multiple=”multiple” 设置select控件为多选，可在界面使用Ctrl+鼠标，进行多选。一般不用。</p>
+</blockquote>
+<blockquote>
+<p>③ selected=”selected” 设置select控件，默认选中的option选项</p>
+</blockquote>
+<blockquote>
+<p>④ readonly=”readonly”</p>
+</blockquote>
+<blockquote>
+<p>⑤ disabled=”disabled”</p>
+</blockquote>
+<blockquote>
+<p>当input被disabled时，该input的name和value数据将无法向后台传送</p>
+</blockquote>
+<blockquote>
+<p>⑥ hidden=”hidden” 隐藏控件。等效于<code>&lt;input type=&quot;hiden&quot; /&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>⑦ nowrap=nowrap</p>
+</blockquote>
+<h4 id="7-下拉列表select标签"><a href="#7-下拉列表select标签" class="headerlink" title="7. 下拉列表select标签"></a>7. 下拉列表select标签</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">&lt;option&gt; 选项&lt;/option&gt;  //option可以有N多个</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="1-常用属性-2"><a href="#1-常用属性-2" class="headerlink" title="1)常用属性"></a>1)常用属性</h5><blockquote>
+<p>name属性,应该写在<code>&lt;select&gt;</code>上,所有选项只有一个name<br>multiple=”multiple” 设置select控件为多选,可在界面使用Ctrl+鼠标,进行多选,一般不用。</p>
+</blockquote>
+<h5 id="2-option常用属性："><a href="#2-option常用属性：" class="headerlink" title="2)option常用属性："></a>2)option常用属性：</h5><blockquote>
+<p>value=””:当option没有value属性时,往后台传递的是<option></option>标签中的文字；<br>当option有value属性时,往后台传递的是value属性的值。</p>
+</blockquote>
+<blockquote>
+<p>title=””:鼠标指到后显示的文字。<br>selected=”selected”:默认选中。</p>
 <p><optgroup label="山东省"></optgroup> :用于将option标签进行分组,label属性表示分组名,或者用label标签包裹。</p>
 </blockquote>
-<p>######8. 文本域 textarea标签<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea&gt; &lt;/textarea&gt;</span><br></pre></td></tr></table></figure></p>
-<p>######1)常用属性</p>
-<blockquote>
-<p>cols=、 rows,设置宽高，但不常用<br>readonly=”readonly” 设置为只读模式，不允许编辑。<br>style=”resize: none;” 设置为宽高不允许修改。<br>style=”overflow: ;” 设置当文字超出区域时，如何处理。<br>  <em>也可以通过overflow-x/overflow-y分别设置水平垂直方向的显示方式。</em><br>常用属性值:hidden 超出区域的文字，隐藏无法显示<br>scroll 无论文字多少，均会显示滚动条<br>auto 自动，根据文字多少自动决定是否显示滚动条（默认样式）</p>
+<h4 id="8-文本域-textarea标签"><a href="#8-文本域-textarea标签" class="headerlink" title="8. 文本域 textarea标签"></a>8. 文本域 textarea标签</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea&gt; &lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="1-常用属性-3"><a href="#1-常用属性-3" class="headerlink" title="1)常用属性"></a>1)常用属性</h5><blockquote>
+<p>cols=、 rows,设置宽高，但不常用<br>readonly=”readonly” 设置为只读模式，不允许编辑。<br>style=”resize: none;” 设置为宽高不允许修改。<br>style=”overflow: ;” 设置当文字超出区域时，如何处理。</p>
 </blockquote>
-<p>######9. iframe标签：嵌套页面,在一个页面中插入新页面,和a标签搭配使用。宽高可指定,支持相对路径<br>1.iframe  嵌套页面,在一个页面中插入新页面,常和a标签搭配使用。宽高可指定,支持相对路径<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &lt;iframe src=&quot;xx&quot; name=&quot;xxx&quot;&gt;</span><br><span class="line">``` </span><br><span class="line">&gt;frameborder属性 页面边框宽度</span><br><span class="line"></span><br><span class="line">######10.a标签</span><br></pre></td></tr></table></figure></p>
+<p>  <em>也可以通过overflow-x/overflow-y分别设置水平垂直方向的显示方式。</em></p>
+<blockquote>
+<p>常用属性值:hidden 超出区域的文字，隐藏无法显示<br>scroll 无论文字多少，均会显示滚动条<br>auto 自动，根据文字多少自动决定是否显示滚动条（默认样式）</p>
+</blockquote>
+<h4 id="9-iframe标签：嵌套页面-在一个页面中插入新页面-和a标签搭配使用。宽高可指定-支持相对路径"><a href="#9-iframe标签：嵌套页面-在一个页面中插入新页面-和a标签搭配使用。宽高可指定-支持相对路径" class="headerlink" title="9. iframe标签：嵌套页面,在一个页面中插入新页面,和a标签搭配使用。宽高可指定,支持相对路径"></a>9. iframe标签：嵌套页面,在一个页面中插入新页面,和a标签搭配使用。宽高可指定,支持相对路径</h4><p>1.iframe  嵌套页面,在一个页面中插入新页面,常和a标签搭配使用。宽高可指定,支持相对路径<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &lt;iframe src=&quot;xx&quot; name=&quot;xxx&quot;&gt;</span><br><span class="line">``` </span><br><span class="line">&gt;frameborder属性 页面边框宽度</span><br><span class="line"></span><br><span class="line">#### 10.a标签</span><br></pre></td></tr></table></figure></p>
 <p><a href></a><br><code>`</code></p>
 <blockquote>
-<p>target属性：</p>
+<p>target属性： </p>
+</blockquote>
 <pre><code>1. _blank 新窗口打开页面
 2. _self 当前自身窗口打开页面
 3. _parent 父窗口打开页面
 4. _top 在顶级窗口打开页面
-</code></pre><p>a标签和iframe标签搭配使用案例：<br>       <em><iframe name="xxx" src="#" frameborder="0"><br>       <a target="xxx" href="http://qq.com">QQ</a><br>       <a target="xxx" href="http://www.baidu.com">百度一下</a><br>       iframe会加载一个完整页面，会很卡</iframe></em></p>
+</code></pre><blockquote>
+<p>a标签和iframe标签搭配使用案例：</p>
 </blockquote>
-<blockquote>
-<p>download<br>       下载</p>
+<pre><code>*&lt;iframe name=&quot;xxx&quot; src=&quot;#&quot; frameborder=&quot;0&quot;&gt;
+&lt;a target=xxx href=&quot;http://qq.com&quot;&gt;QQ&lt;/a&gt;
+&lt;a target=xxx href=&quot;http://www.baidu.com&quot;&gt;百度一下&lt;/a&gt;
+iframe会加载一个完整页面，会很卡*
+</code></pre><blockquote>
+<p>download</p>
 </blockquote>
-<blockquote>
+<pre><code>下载
+</code></pre><blockquote>
 <p>href</p>
+</blockquote>
 <pre><code>1. #不会对服务器发起请求，此时a元素作为锚点，不跳转页面
 2. 除了#以外的值都会发起请求 ,但会返回到页面顶部
 3. 伪协议 javascript:; 点击后什么都不做,满足特殊需求
-</code></pre></blockquote>
-<p><em>　　　　　　　　声明：本博客版权归兰文聪和饥人谷所有，转载需说明来源！</em></p>
+</code></pre><p>　<em>　　　　　　　</em>声明：本博客版权归兰文聪和饥人谷所有，转载需说明来源！*</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
